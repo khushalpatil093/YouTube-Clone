@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>videoDetailsPage</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            background: #121212;
+        }
+        .video-mainDiv{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 20px;
+        }
+        .video{
+            height: 46vh;
+            width: 40%;
+            border: 1px solid green;
+            color: white;
+        }
+        .videoBox img{
+            width: 100%;
+        }
+        .line{
+            border: 1px solid #585050;
+        }
+        .video .channelName{
+            display: flex;
+            justify-content: space-between;
+            padding: 15px;
+        }
+        .video-list{
+            height: 100vh;
+            width: 25%;
+        }
+        .likeShareSub {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 15px;
+            align-items: center;
+        }
+        .likeShareSub .left{
+            display: flex;
+            gap: 10px; 
+            align-items: center;
+        }
+        .likeShareSub .right{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .description{
+            padding-bottom: 15px;
+        }
+        .comments{
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+        .comments .section-1{
+            display: flex;
+            gap: 40px;
+        }
+        .like, .dislike, .share, .save, .hamberger-menu {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="video-mainDiv">
+        
+        <div class="video">
+            <div class="videoBox">
+                <iframe id="yt-video" width="420" height="315" src="">
+
+                </iframe>
+            </div>
+            <p class="videoTitle">Lorem ipsum</p>
+            <div class="likeShareSub">
+                <div class="left">
+                    <span>26 views</span>
+                    <span>oct 8, 2021</span>
+                </div>
+                <div class="right">
+                    <div class="like">
+                        <span><img src="./Assets/aside-images/like.svg" /></span>
+                        <span>12k</span>
+                    </div>
+                    <div class="dislike">
+                        <span><img src="./Assets/aside-images/DisLiked.svg" /></span>
+                        <span>1k</span>
+                    </div>
+                    <div class="share">
+                        <span><img src="./Assets/aside-images/Share.svg" /></span>
+                        <span>SHARE</span>
+                    </div>
+                    <div class="save">
+                        <span><img src="./Assets/aside-images/Save.svg" /></span>
+                        <span>SAVE</span>
+                    </div>
+                    <div class="hamburger-menu">
+                        <span><img src="./Assets/aside-images/threeDot.svg" /></span>
+                    </div>
+                </div>
+            </div>
+            <div class="line"></div>
+            <div class="channelName">
+                <div class="channel">Khushal Patil</div>
+                <button type="submit">SUBSCRIBE</button>
+            </div>
+            <div class="description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, molestiae cumque eos accusantium amet temporibus excepturi distinctio fuga. Libero modi provident sapiente porro excepturi. Nobis, adipisci. Delectus dolorem sunt ipsum?
+            </div>
+            <div class="line"></div>
+            <div id="comments">
+                <div class="section-1">
+                    <span>comments 286</span>
+                    <div class="sortBy">
+                        <span></span>
+                        <span>SORT BY</span>
+                    </div>
+                </div>
+                <div class="section-2"></div>
+            </div>
+        </div>
+
+        <div class="video-list">
+            <div class="categories"></div>
+            <div class="videos">
+                <div class="video-box">
+                    <div class="vd"></div>
+                    <div class="vd-des"></div>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+
+    <script src="./showVideo.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+</body>
+</html>
